@@ -15,15 +15,15 @@ O projeto será um jogo feito em **Java** utilizando a biblioteca **`javax.swing
 ```sh
 📂 ProjetoFinalPoo/
          ├── 📂 bin/
-         │       └── (*.class)
+         │       └── (*.class)             // Binários gerados
          ├── 📂 scripts/
-         │         ├── compile.sh
-         │         └── run.sh
+         │         ├── compile.sh          // Compila todos os arquivos .java em 'src'
+         │         └── run.sh              // Roda a classe 'App' com todas as dependencias
          └── 📂 src
                  ├── 📂 assets/ 
-                 │         └── (*.jpg)
-                 ├── App.java
-                 └── (*.java)
+                 │         └── (*.jpg)     // Todas as imagens utilizadas
+                 ├── App.java              // Arquivo principal 'App'
+                 └── (*.java)              // Todos os outros arquivos contendo suas classes
 ```
 
 1. #TODO
