@@ -1,5 +1,4 @@
 # Projeto Final – Programação Orientada a Objetos
-
 **Aluno:** Mauro Gutemberg Magalhães Barros  
 **Professor:** Renê Douglas  
 
@@ -8,6 +7,28 @@
 ## Descrição do Projeto
 O projeto será um jogo feito em **Java** utilizando a biblioteca **`javax.swing`**.
 
+
+## Estrutura e fluxo do projeto  
+
+### Estrutura planejada
+
+```sh
+📂 ProjetoFinalPoo/
+         ├── 📂 bin/
+         │       └── (*.class)
+         ├── 📂 scripts/
+         │         ├── compile.sh
+         │         └── run.sh
+         └── 📂 src
+                 ├── App.java
+                 └── (*.java)
+```
+
+1. #TODO
+```sh
+
+```
+
 ---
 
 ## Funcionalidades
@@ -15,7 +36,6 @@ O projeto será um jogo feito em **Java** utilizando a biblioteca **`javax.swing
 ### Menus
 - Tela inicial com nome do jogo.  
 - Seleção entre **Tutorial** e **Iniciar**.  
-- Transição entre telas suave.  
 
 ### Mecânicas Básicas
 - **Iniciar** → leva o jogador à primeira fase.  
@@ -32,14 +52,17 @@ O projeto será um jogo feito em **Java** utilizando a biblioteca **`javax.swing
   - São feitas **3 apostas**.  
   - Cada aposta = **nova mão de pôquer** aleatória.  
   - O jogador joga com uma **mão de 10 cartas**.  
+  - O jogador joga uma **mão de até 5 cartas**.  
 - Cada mão de pôquer soma ao **multiplicador de dinheiro** do jogador.  
   - O multiplicador é aplicado ao dinheiro **ao final da 3ª aposta**.  
-- Para avançar, o jogador **não pode** cair para multiplicador ≤ **0.5x**.  
+- O jogador inciará cada aposta com 5 descartes, podendo descartar até 5 cartas.  
+  - O jogo poderá acabar caso o deck de 52 cartas se esvazie durante uma rodada.  
+- Para avançar, o jogador **não pode** encerrar um round com o multiplicador ≤ **1.5x**.  
 - O jogador pode escolher **rodar um dado de 6 lados**:  
   - O número sorteado = quantidade de balas do revólver (**b/6**).  
-  - O revólver pode **aumentar ou reduzir** o multiplicador.  
+  - O revólver pode **aumentar** o multiplicador de acordo com a probabilidade.  
 - Fórmula do revólver:  
-  - `((n + 1) ^ 2)`  
+  - `MULT * ((n + 1) ^ 2)`  
   - Onde **n** = número de balas no tambor.  
 
 ---
