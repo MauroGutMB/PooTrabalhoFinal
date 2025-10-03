@@ -20,6 +20,8 @@ O projeto será um jogo feito em **Java** utilizando a biblioteca **`javax.swing
          │         ├── compile.sh
          │         └── run.sh
          └── 📂 src
+                 ├── 📂 assets/ 
+                 │         └── (*.jpg)
                  ├── App.java
                  └── (*.java)
 ```
